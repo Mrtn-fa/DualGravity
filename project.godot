@@ -11,7 +11,7 @@ config_version=4
 [application]
 
 config/name="DualGravity"
-run/main_scene="res://LEVEL_1.tscn"
+run/main_scene="res://LEVELS/LEVEL_1.tscn"
 config/icon="res://icon.png"
 
 [display]
