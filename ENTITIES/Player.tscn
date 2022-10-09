@@ -21,5 +21,5 @@ shape = SubResource( 1 )
 current = true
 limit_left = 0
 limit_top = 0
-limit_right = 480
+limit_right = 660
 limit_bottom = 368
