@@ -6,11 +6,15 @@ var SPEED = 200
 var JUMP_SPEED = 300
 var ACCELERATION = 300
 var g = -1
+var spring = 450
+
+func change_grav():
+	g *= -1
+	self.scale.y *= -1
 
 func _physics_process(delta):
 	if Input.is_action_just_pressed("gravity"):
-		g *= -1
-		self.scale.y *= -1
+		change_grav()
 	
 	velocity = move_and_slide(velocity, Vector2.UP*g)
 	
@@ -25,6 +29,16 @@ func _physics_process(delta):
 	
 
 func _ready():
-	self.scale.y *= -1
+
 	pass # Replace with function body.
 
+
+func _on_Switch_body_exited(body):
+	print("switch")
+	velocity.x += 25
+	change_grav()
+
+
+func _on_Spring_body_entered(body):
+	print("spring")
+	velocity.y = spring*-g
