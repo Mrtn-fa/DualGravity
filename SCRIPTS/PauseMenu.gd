@@ -1,8 +1,8 @@
 extends Control
 
-onready var play = $VBoxContainer/play
-onready var credits = $VBoxContainer/credits
-onready var exit = $VBoxContainer/exit
+onready var play = $MarginContainer/VBoxContainer/play
+onready var credits = $MarginContainer/VBoxContainer/credits
+onready var exit = $MarginContainer/VBoxContainer/exit
 
 func _ready():
 	play.connect("pressed", self, "_on_play_pressed")
