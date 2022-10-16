@@ -7,6 +7,7 @@ var JUMP_SPEED = 300
 var ACCELERATION = 300
 var g = 1
 var spring = 450
+var flag_value = 0
 
 func change_grav():
 	g *= -1
@@ -42,3 +43,16 @@ func _on_Switch_body_exited(body):
 func _on_Spring_body_entered(body):
 	print("spring")
 	velocity.y = spring*-g
+
+
+func _on_FLAG_body_entered(body):
+	#pasar al siguiente nivel
+	print("win")
+	flag_value = 1
+	pass
+
+
+func _on_FLAG_body_exited(body):
+	print("win")
+	flag_value = 0
+	pass
