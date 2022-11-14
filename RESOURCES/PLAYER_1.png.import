@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Idle.png-71d1d0bb361481276d6d51f7176b4865.stex"
+path="res://.import/PLAYER_1.png-476278c475bd0257c1775ab3f60ab6c0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://RESOURCES/Free/Traps/Spikes/Idle.png"
-dest_files=[ "res://.import/Idle.png-71d1d0bb361481276d6d51f7176b4865.stex" ]
+source_file="res://RESOURCES/PLAYER_1.png"
+dest_files=[ "res://.import/PLAYER_1.png-476278c475bd0257c1775ab3f60ab6c0.stex" ]
 
 [params]
 
