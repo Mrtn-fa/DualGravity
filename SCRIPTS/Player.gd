@@ -78,3 +78,6 @@ func _on_FLAG_body_exited(body):
 	print("win")
 	flag_value = 0
 	pass
+
+func take_damage(instigator: Area2D):
+	print("asd")

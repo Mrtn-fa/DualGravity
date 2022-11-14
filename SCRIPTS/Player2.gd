@@ -75,3 +75,6 @@ func _on_FLAG_body_entered(body):
 func _on_FLAG_body_exited(body):
 	flag_value = 0
 	pass # Replace with function body.
+
+func take_damage(instigator: Area2D):
+	print("asd")
