@@ -14,6 +14,7 @@ var ACCELERATION = 300
 var g = 1
 var spring = 450
 var flag_value = 0
+var spike_value = 0
 
 func change_grav():
 	g *= -1
@@ -81,3 +82,8 @@ func _on_FLAG_body_exited(body):
 
 func take_damage(instigator: Area2D):
 	print("asd")
+
+
+func _on_Spike_body_entered(body):
+	spike_value = 1
+	pass # Replace with function body.
