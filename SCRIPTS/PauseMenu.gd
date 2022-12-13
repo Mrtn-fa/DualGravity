@@ -13,8 +13,7 @@ func _on_play_pressed():
 	get_tree().change_scene("res://LEVELS/LEVEL_3.tscn")
 	
 func _on_credits_pressed():
-	print("Credits")
-	pass
+	get_tree().change_scene("res://UI/Credits.tscn")
 
 func _on_exit_pressed():
 	get_tree().quit()

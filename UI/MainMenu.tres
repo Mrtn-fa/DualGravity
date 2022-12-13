@@ -1,0 +1,19 @@
+[gd_resource type="Theme" load_steps=4 format=2]
+
+[ext_resource path="res://RESOURCES/FONTS/80s-retro-future.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.92549, 0.607843, 0.607843, 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 26
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[resource]
+default_font = SubResource( 3 )
+Button/styles/hover = SubResource( 2 )
+MarginContainer/constants/margin_bottom = 24
+MarginContainer/constants/margin_left = 24
+MarginContainer/constants/margin_right = 24
+MarginContainer/constants/margin_top = 24

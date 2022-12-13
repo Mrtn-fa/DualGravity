@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://UI/MainMenu.tres" type="Theme" id=1]
+[ext_resource path="res://UI/PauseMenu.gd" type="Script" id=2]
+
+[node name="PauseMenu" type="MarginContainer"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 48.0
+margin_top = 48.0
+margin_right = -48.0
+margin_bottom = -48.0
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 24.0
+margin_top = 24.0
+margin_right = 360.0
+margin_bottom = 360.0
+alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+margin_top = 93.0
+margin_right = 336.0
+margin_bottom = 123.0
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "Pause"
+align = 1
+
+[node name="Resume" type="Button" parent="VBoxContainer"]
+margin_top = 127.0
+margin_right = 336.0
+margin_bottom = 163.0
+text = "Resume"
+
+[node name="MainMenu" type="Button" parent="VBoxContainer"]
+margin_top = 167.0
+margin_right = 336.0
+margin_bottom = 203.0
+text = "Main Menu"
+
+[node name="Exit" type="Button" parent="VBoxContainer"]
+margin_top = 207.0
+margin_right = 336.0
+margin_bottom = 243.0
+text = "Exit"
