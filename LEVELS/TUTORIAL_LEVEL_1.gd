@@ -15,4 +15,6 @@ func _ready():
 func _process(delta):
 	if (s1.spike_value == 1 or s2.spike_value == 1):
 		get_tree().reload_current_scene()
+	if (s1.flag_value == 1 and s2.flag_value == 1):
+		get_tree().change_scene("res://LEVELS/LEVEL_3.tscn")
 

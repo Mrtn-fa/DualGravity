@@ -24,4 +24,5 @@ position = Vector2( 36, 426 )
 [node name="Spike" parent="." instance=ExtResource( 2 )]
 position = Vector2( 194, 439 )
 
+[connection signal="body_entered" from="FLAG" to="KinematicBody2D" method="_on_FLAG_body_entered"]
 [connection signal="body_entered" from="Spike" to="KinematicBody2D" method="_on_Spike_body_entered"]
